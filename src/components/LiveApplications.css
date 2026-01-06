@@ -1,0 +1,79 @@
+.live-applications {
+  padding: 3rem 2rem;
+  background-color: #f9fafb;
+}
+
+.live-applications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.application-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.application-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.application-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.apply-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+}
+
+.apply-btn:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .live-applications {
+    padding: 2rem 1rem;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-applications {
+    padding: 1.5rem 1rem;
+  }
+
+  .application-card {
+    padding: 1rem;
+  }
+
+  .application-name {
+    font-size: 0.95rem;
+  }
+}
+

@@ -1,0 +1,70 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  width: 100%;
+}
+
+.logo-link:hover {
+  opacity: 0.85;
+}
+
+.logo-image {
+  height: 90px; /* original hi rehne do */
+  width: auto;
+  max-width: 400px;
+  min-width: 280px;
+  object-fit: contain;
+  display: block;
+
+  transform: scale(1.25); /* 🔥 vertical + horizontal dono side se */
+  transform-origin: center; /* center se grow kare */
+}
+
+.logo-link:hover .logo-image {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .logo-image {
+    height: 60px;
+    max-width: 350px;
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 50px;
+    max-width: 300px;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-image {
+    height: 45px;
+    max-width: 260px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo-image {
+    height: 40px;
+    max-width: 230px;
+    min-width: 160px;
+  }
+}
